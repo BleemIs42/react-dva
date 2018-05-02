@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React-Dva-Template</title>
+
+    <style>
+        .loading{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            z-index: 10000;
+            background-size: contain;
+            background-position:center center;
+            background-repeat: no-repeat;
+            animation: logo 0.7s ease infinite alternate;
+            -webkit-animation: logo 0.7s ease infinite alternate;
+        }
+        @keyframes logo {
+            from{
+                transform: translate(-50%, -20%);
+                -webkit-transform: translate(-50%, -20%);
+            }
+            to {
+                transform: translate(-50%, 20%);
+                -webkit-transform: translate(-50%, 20%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="loading"></div>
+    </div>
+</body>
+</html>

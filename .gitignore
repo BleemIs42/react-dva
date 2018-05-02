@@ -1,0 +1,8 @@
+#system
+.DS_Store
+.vscode
+
+# Dependency directory
+node_modules
+
+
