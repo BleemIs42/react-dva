@@ -151,7 +151,15 @@ module.exports = {
       template: assetsPath('src/index.html')
     }),
     new WebpackBar()
-  ].concat(isProd ? [] : [
+  ].concat(isProd ? [
+    new webpack.optimize.AggressiveSplittingPlugin({
+      minSize: 50000,
+      maxSize: 240000
+    }),
+    new webpack.optimize.AggressiveMergingPlugin({
+      minSizeReduce: 1.001
+    }),
+  ] : [
     // new BundleAnalyzerPlugin({
     //   analyzerMode: 'server',
     //   analyzerHost: '127.0.0.1',
