@@ -14,7 +14,7 @@
     "tiny": "redcli tiny \"src/assets/images/**/*.png\""
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "dva": "^2.2.3",
     "dva-loading": "^2.0.1",
     "react": "^16.3.2",
